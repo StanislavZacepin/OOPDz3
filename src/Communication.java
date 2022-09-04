@@ -26,7 +26,7 @@ public interface Communication {
     }
 
     default void areYouPoor(Consumer consumer) {
-        if (totalCost(consumer.wishList) > consumer.getMoney()) {
+        if (totalCost(consumer.getItems()) > consumer.getMoney()) {
             System.out.println("Ты нищеброд");
         } else {
             walkInStorage(consumer);

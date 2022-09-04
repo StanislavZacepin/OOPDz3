@@ -1,5 +1,7 @@
 public class Main {
     public static void main(String[] args) {
+
+
         //Human seller = new Seller("Валя",150,3); Нельзя залесть в список
         Seller seller = new Seller("Валя",150,3);
        // Human consumer = new Consumer("Петя", 150, 3); Нельзя залесть в список
@@ -40,7 +42,7 @@ public class Main {
 
     }
     public static void action(Seller seller, Consumer consumer){
-        boolean flag = seller.isItemsInStorage(seller,consumer);
+        boolean flag = seller.isItemsInStorage(seller,consumer.getItems());
         if(flag){
             seller.areYouPoor(consumer);
         }
