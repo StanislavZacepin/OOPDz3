@@ -6,4 +6,9 @@ public class Consumer extends Human{
     public Consumer(String name, double money, int loveIndex) {
         super(name, money, loveIndex);
     }
+
+    @Override
+    public void walkInStorage() {
+
+    }
 }

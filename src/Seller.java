@@ -11,4 +11,9 @@ public class Seller extends Human{
     public List<Item> getItems() {
         return items;
     }
+
+    @Override
+    public void walkInStorage() {
+
+    }
 }

@@ -15,12 +15,16 @@ public interface Communication {
     }
 
     //Дописать метод
-    default double totalCost(){
-
+    default double totalCost(List<Item> basketAmount){
+        double summ =0;
+        for (Item item : basketAmount) {
+            summ += item.getCost();
+        }
+        return summ;
     }
 
-    default void areYouPoor (Consumer consumer){
-        if(totalCost() > consumer.getMoney()){
+    default void areYouPoor (Consumer consumer ){
+        if(totalCost(consumer.wishList) > consumer.getMoney()){
             System.out.println("Ты нищеброд");
         } else {
             walkInStorage();
