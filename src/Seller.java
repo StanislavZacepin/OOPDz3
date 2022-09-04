@@ -2,25 +2,23 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class Seller extends Human {
-    private List<Item> items = new ArrayList<>();
+
 
     public Seller(String name, double money, int loveIndex) {
         super(name, money, loveIndex);
     }
 
-    public List<Item> getItems() {
-        return items;
-    }
+
 
     @Override
     public void walkInStorage(Consumer сonsumer) {
-        for (int i = 0; i < items.size(); i++) {
-            if (items.get(i) == сonsumer.wishList.get(i)) {
-                double money = getMoney() + items.get(i).getCost();
+        for (int i = 0; i < super.getItems().size(); i++) {
+            if (super.getItems().get(i) == сonsumer.wishList.get(i)) {
+                double money = getMoney() + super.getItems().get(i).getCost();
                 setMoney(money);
-                items.remove(i);
+                super.getItems().remove(i);
 
-                money = сonsumer.getMoney() - items.get(i).getCost();
+                money = сonsumer.getMoney() - super.getItems().get(i).getCost();
                 сonsumer.setMoney(money);
                 сonsumer.wishList.remove(i);
             }

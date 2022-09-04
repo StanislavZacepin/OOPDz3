@@ -6,12 +6,14 @@ public interface Communication {
         return item.getCost();
     }
 
-    default void isItemsInStorage(Seller seller, List<Item> wishListOfConsumer) {
+    default boolean isItemsInStorage(Seller seller, List<Item> wishListOfConsumer) {
         for (Item item : wishListOfConsumer) {
             if (!seller.getItems().contains(item)) {
                 System.out.println("У нас нет " + item.getNameOfItem());
+                return false;
             }
         }
+        return true;
     }
 
     //Дописать метод
