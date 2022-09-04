@@ -4,10 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ccf316a1-25b2-4b80-861a-cce98efef1c0" name="Changes" comment="Старт">
+    <list default="true" id="ccf316a1-25b2-4b80-861a-cce98efef1c0" name="Changes" comment="Рефакторинг">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Communication.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Communication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Consumer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Consumer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Human.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Human.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Seller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Seller.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -54,7 +54,21 @@
       <option name="project" value="LOCAL" />
       <updated>1662280901394</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Дописали метод totalCost. Передали ему список корзины покупателя. Рефаторинг метода areYouPoor">
+      <created>1662284655823</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1662284655823</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Рефакторинг">
+      <created>1662284676608</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1662284676608</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -70,6 +84,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Старт" />
-    <option name="LAST_COMMIT_MESSAGE" value="Старт" />
+    <MESSAGE value="Дописали метод totalCost. Передали ему список корзины покупателя. Рефаторинг метода areYouPoor" />
+    <MESSAGE value="Рефакторинг" />
+    <option name="LAST_COMMIT_MESSAGE" value="Рефакторинг" />
   </component>
 </project>

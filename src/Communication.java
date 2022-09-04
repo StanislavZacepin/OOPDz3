@@ -27,11 +27,11 @@ public interface Communication {
         if (totalCost(consumer.wishList) > consumer.getMoney()) {
             System.out.println("Ты нищеброд");
         } else {
-            walkInStorage();
+            walkInStorage(consumer);
         }
     }
 
 
     //У Покупателя и Продавца реализовать свои вариации метода "пойти на склад"
-    void walkInStorage();
+    void walkInStorage(Consumer consumer);
 }

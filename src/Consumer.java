@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.List;
 
 public class Consumer extends Human{
     ArrayList<Item> wishList = new ArrayList<>();
@@ -8,7 +9,7 @@ public class Consumer extends Human{
     }
 
     @Override
-    public void walkInStorage() {
+    public void walkInStorage(Consumer consumer) {
 
     }
 }
